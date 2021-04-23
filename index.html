@@ -15,8 +15,8 @@
     <div id="app">
         <h1>Afficher/Masquer mot de passe</h1>
       <div class="conteneur">
-        <form>
-          <input v-bind:type="montrerCacher" name="mdp" id="mdp" />
+        <form method="POST" action="">
+          <input v-bind:type="montrerCacher" placeholder="taper votre mot de passe" />
           <i v-if="hide" @click="showMDP" class="fas fa-eye-slash"></i>
           <i v-if="show" @click="hideMDP" class="fas fa-eye"></i>
         </form>
