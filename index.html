@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afficher Mot de passe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0cf433a1e1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="app">
+        <form>
+            <input v-bind:type="montrerCacher" name="mdp" id="mdp">
+            <i v-if="hide" @click="showMDP" class="fas fa-eye-slash"></i>
+            <i v-if="show" @click="hideMDP" class="fas fa-eye"></i>
+        </form>
+    </div>
+    <script src="vue.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
